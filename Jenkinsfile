@@ -29,7 +29,7 @@ pipeline{
                 }
             }
                 steps{
-                    sh 'chmod +x systemcheck.sh && ./systemcheck.sh'
+                    echo 'Happy Father's Day to all the Fathers!'
                 }
             }
         }                        

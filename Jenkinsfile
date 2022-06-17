@@ -29,7 +29,7 @@ pipeline{
                 }
             }
                 steps{
-                    echo 'Happy Father's Day to all the Fathers!'
+                    echo 'Happy Father Day to all the Fathers!'
                 }
             }
         }                        

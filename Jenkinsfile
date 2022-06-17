@@ -11,17 +11,15 @@ pipeline{
             }
         }
         stage('Anny-push-to-slave1') {
-            stage('push-to-slave1') {
-                agent {
-                    label {
-                        label "slave1"
-                    }
-                }
-                steps{
-                    sh 'df -h'
-                    echo 'Have a lovely day!'
+            agent {
+                label {
+                    label "slave1"
                 }
             }
+            steps{
+                sh 'df -h'
+                echo 'Have a lovely day!'
+            }   
         }
     }
 }

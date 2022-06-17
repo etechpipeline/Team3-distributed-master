@@ -14,12 +14,24 @@ pipeline{
             agent {
                 label {
                     label "slave1"
+                        }
+                    }
+                    steps{
+                        sh 'df -h'
+                            echo 'Have a lovely day!'
+                        }   
+                    }
                 }
             }
-            steps{
-                sh 'df -h'
-                echo 'Have a lovely day!'
-            }   
-        }
-    }
-}
+            stage('Inno-push-to-slave2') {
+                label {
+                    label "slave2"
+                }
+            }
+                steps{
+                    sh 'chmod +x systemcheck.sh && ./systemcheck.sh'
+                }
+            }
+        }                        
+    }    
+}    

@@ -7,7 +7,7 @@ pipeline{
     stages {
         stage('codeCheckout') {
             steps {
-                Githubcode
+                git branch: 'main', credentialsId: '27ad29e6-be3a-49fa-8285-afa75c144e11', url: 'https://github.com/etechpipeline/Team3-distributed-master.git'
             }
         }
         stage('Anny-push-to-slave1') {

@@ -18,19 +18,17 @@ pipeline{
                     }
                     steps{
                         sh 'df -h'
-                            echo 'Have a lovely day!'
-                        }   
-                    }
+                        echo 'Have a lovely day!'
+                    }   
                 }
-            }
-            stage('Inno-push-to-slave2') {
+        stage('Inno-push-to-slave2') {
+            agent {
                 label {
                     label "slave2"
                 }
             }
-                steps{
-                    echo 'Happy Father Day to all the Fathers!'
-                }
+            steps {
+                echo 'Happy Father Day to all the Fathers!'
             }
         }                        
     }    

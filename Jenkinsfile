@@ -40,6 +40,17 @@ pipeline{
             steps {
                 echo 'Happy Father Day to all the Fathers!'
             }
-        }                        
+        }
+        stage('viv-push-to-slave1'){
+            agent {
+                label {
+                    label "slave1"
+                }
+            }
+            steps {
+                echo "cal 2030"
+            }
+        }
+
     }    
 }    

@@ -8,12 +8,9 @@ How to rescue a crashing Jenkins master instance.
   7. After all the configuration is complete, The New server will now have access to the old server.
 
 
-  
-  
-  
-  What is the use of thinBackup plugin and how have you used it to perform backup configurations
-    1.    ThinBackup plugging is use to configure back up of a Jenkins server to recover critical configuration file incase the jenkins server crashes.
-    2.    use the thin Backupplugin to configure backup of a Jenkins server
-    3.    Recover configuration files incase the Jenkins server crashes. 
-    4.    Extend the NFS sever 
-    5.    configure for Stronger Backup
+What is the use of thinBackup plugin and how have you used it to perform backup configurations
+  1. ThinBackup plugging is use to configure back up of a Jenkins server to recover critical configuration file incase the jenkins server crashes.
+  2. Use the thin Backupplugin to configure backup of a Jenkins server
+  3  Recover configuration files incase the Jenkins server crashes. 
+  4. Extend the NFS sever 
+  5. Configure for Stronger Backup

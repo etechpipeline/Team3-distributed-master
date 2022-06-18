@@ -30,6 +30,16 @@ pipeline{
             steps {
                 echo 'Happy Father Day to all the Fathers!'
             }
+        }
+        stage('emmanuel-push-to-slave3'){
+            agent {
+                label {
+                    label "slave3"
+                }
+            }
+            steps {
+                echo 'Happy Father Day to all the Fathers!'
+            }
         }                        
     }    
 }    
